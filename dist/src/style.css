@@ -9,10 +9,10 @@
   outline: none;
 }
 button {
-  transition: color 0.4s;
+  transition: transform 0.4s;
 }
 button:hover {
-  color: #f0f8ff;
+  transform: translateX(40px);
 }
 .panel {
   display: block;
