@@ -1,0 +1,73 @@
+$color-1: #F7AF9D;
+$color-2: #7180B9;
+$color-3: #2EC4B6;
+$color-4: #CCFF66;
+
+@import "accordion.scss";
+@import "font-mpd.scss";
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    height: 100%;
+    font-size: 24px;
+}
+
+.tabs-nav {
+    list-style-type: none;
+    cursor: cell;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+
+.tab-content {
+    display: none;
+    overflow-y: auto;
+    height: 93%;
+}
+
+.tab-link {
+    flex:1;
+    padding: 10px 25px 25px 25px;
+    padding-top: 10px;
+    transition-property: flex;
+    transition-duration: 1s;
+    transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+.sd {
+    background: $color-1;
+}
+.pd {
+    background: $color-2;
+}
+.mm {
+    background: $color-3;
+}
+.ab {
+    background: $color-4;
+    flex: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: underline;
+}
+img{
+    width:100%;
+    max-width: 560px;
+    padding-left: 110px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .tabs-nav {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .sd .panel {
+        display: none;
+    }
+}
