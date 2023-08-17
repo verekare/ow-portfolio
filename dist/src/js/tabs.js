@@ -17,10 +17,10 @@ function closeTabs() {
   }
 }
 
-function openTab(tabId) { 
+function openTab() { 
 
   this.style.flex = 1;
-  document.getElementById(tabId).style.display = 'block';
+  this.style.display = 'block';
 }
 
 let COUNT = [0,0,0,0];
@@ -32,7 +32,8 @@ for (let i = 0; i < tabLinks.length; i++) {
     if (COUNT[i]%2 === 0) {
       closeTabs();
     } else {
-      openTab(`tab{tabLinks[i]+1}`)
+      // openTab(`tab{tabLinks[i]+1}`)
+      openTab(tabLinks[i])
     }
   })
 }
