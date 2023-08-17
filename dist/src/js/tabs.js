@@ -17,10 +17,10 @@ function closeTabs() {
   }
 }
 
-function openTab() { 
+function openTab(tab) { 
 
-  this.style.flex = 1;
-  this.style.display = 'block';
+  tab.style.flex = 1;
+  tab.lastElementChild.style.display = 'block';
 }
 
 let COUNT = [0,0,0,0];
