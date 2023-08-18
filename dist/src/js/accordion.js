@@ -1,7 +1,7 @@
     // OPEN/CLOSE ACCORDION
     let acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
+      acc[i].addEventListener("click", function(event) {
         let panel = this.nextElementSibling;
       
                 // toggle between hide / show
@@ -10,6 +10,7 @@
         } else {
           panel.style.display = "block";
         }
+        event.stopPropagation();
     
       });
       }
