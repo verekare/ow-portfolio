@@ -34,7 +34,7 @@ html, body {
     padding-top: 10px;
     transition-property: flex;
     transition-duration: 1s;
-    transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+    transition-timing-function: ease;
 }
 
 .sd {
