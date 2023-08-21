@@ -28,8 +28,7 @@ let COUNT = [0,0,0,0];
 for (let i = 0; i < tabLinks.length; i++) {
   tabLinks[i].addEventListener("click", ()=> {
     COUNT[i] += 1;
-    console.log(COUNT[i]);
-    console.log(COUNT[i]/2);
+    console.log(tabLinks[i],': pressed', COUNT[i], 'times, even number means @close');
     if (COUNT[i]%2 === 0) {
       closeTabs();
     } else {
