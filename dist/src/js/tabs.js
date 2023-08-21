@@ -1,16 +1,12 @@
     // SWITCHING THE TABS
-            // (tab-content, clicked tab-link)
-
-  // tab-link array
-let tabLinks = Array.from(document.querySelectorAll(".tab-link"));
-  // find all content
-let tabContents = document.querySelectorAll('.tab-content');
+const tabLinks = Array.from(document.querySelectorAll(".tab-link"));
+const tabContents = Array.from(document.querySelectorAll('.tab-content'));
 
 
 for (let i = 0; i < tabLinks.length; i++) {
   tabLinks[i].addEventListener("click", ()=> {
     
-    if (tabLinks[i].style.display.flex === 0) {
+    if (tabLinks[i].style.display.flex == 0) {
       tabLinks[i].style.flex = 1;
       tabContents[i].style.display = "block";
     } else {
