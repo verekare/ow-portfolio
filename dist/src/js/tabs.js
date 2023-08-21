@@ -11,10 +11,10 @@ for (let i = 0; i < tabLinks.length; i++) {
   tabLinks[i].addEventListener("click", ()=> {
     
     if (tabLinks[i].style.display.flex === 0) {
-      tabLinks[i].style.display.flex = 1;
+      tabLinks[i].style.flex = 1;
       tabContents[i].style.display = "block";
     } else {
-      tabLinks[i].style.display.flex = 0;
+      tabLinks[i].style.flex = 0;
       tabContents[i].style.display = "none";
     }
   })
