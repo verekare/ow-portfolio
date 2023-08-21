@@ -13,7 +13,7 @@ for (let i = 0; i < tabLinks.length; i++) {
       tabLinks[i].style.flex = 2;
       tabLinks[i].lastElementChild.style.display = "block";
     } else if (tabLinks[i].style.flex === 2) {
-      console.log('closing!!!')
+      console.log('closing!!!');
       for (let k = 0; k < tabLinks.length-1; k++) {
         tabLinks[k].style.flex = 1;
         tabLinks[k].lastElementChild.style.display = "none";
