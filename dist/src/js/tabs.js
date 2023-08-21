@@ -6,7 +6,7 @@ const tabContents = Array.from(document.querySelectorAll('.tab-content'));
 for (let i = 0; i < tabLinks.length; i++) {
   tabLinks[i].addEventListener("click", ()=> {
     
-    if (tabLinks[i].style.display.flex == 1) {
+    if (tabLinks[i].style.flex === 1 || tabLinks[i].style.flex === 0) {
       tabLinks[i].style.flex = 2;
       tabContents[i].style.display = "block";
     } else {
