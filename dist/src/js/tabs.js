@@ -10,6 +10,7 @@ function closeTabs() {
 
   for (let tab of tabLinks) {
     tab.style.flex = 0;
+    tab.style.width = '100%';
   }
 
   for (let content of tabContents) {
