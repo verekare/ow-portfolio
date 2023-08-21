@@ -33,7 +33,8 @@ for (let i = 0; i < tabLinks.length; i++) {
       closeTabs();
     } else {
       // openTab(`tab{tabLinks[i]+1}`)
-      openTab(tabLinks[i])
+      closeTabs();
+      openTab(tabLinks[i]);
     }
   })
 }
