@@ -25,13 +25,13 @@ html, body {
 
 .tab-content {
     display: none;
-    overflow-y: auto;
+    overflow-y: auto; 
     height: 93%;
 }
 
 .tab-link {
     flex:1;
-    width: 100%;
+    max-width: 100%; // limit width to 100% instead of 100% + whatever additional width content adds
     padding: 10px 25px 25px 25px;
     padding-top: 10px;
     transition-property: flex;
@@ -68,8 +68,12 @@ img{
     .tabs-nav {
         flex-direction: column;
         overflow-y: auto;
+        overflow-x: hidden; // remove horizontal scroll on mobile devices
     }
     .sd .panel {
         display: block;
+    }
+    .tab-content {
+        overflow: visible;
     }
 }
