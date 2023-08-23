@@ -22,4 +22,9 @@ function openTab(tabId, elem) {
 
             // except chosen content
   document.getElementById(tabId).style.display = 'block';
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth',
+  });
 }
