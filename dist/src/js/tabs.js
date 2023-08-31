@@ -10,7 +10,7 @@ for (let i = 0; i < tabLinks.length; i++) {
       for (let tablink of tabLinks) {
         tablink.style.flex = 1;
       }
-      tabLinks[i].style.flex = 2;
+      tabLinks[i].style.flex = 2; // selected
       tabLinks[i].lastElementChild.style.display = "block";
     } else if (tabLinks[i].style.flex === 2) {
       console.log('closing!!!');
