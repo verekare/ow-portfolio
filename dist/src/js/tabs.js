@@ -1,8 +1,9 @@
-let tabs = Array.from(document.getElementById('tabs-nav').children)
+let tabs = document.getElementById('tabs-nav')
 
 tabs.forEach( (tab, index) => {
   tab.addEventListener("click", () => {
       if (tab.style.flexGrow === '1' || tab.style.flexGrow === '0') {
+          console.log('flex')
           tabs.forEach( (_tab) => {  //all
               _tab.style.flexGrow = '0';
               _tab.lastElementChild.style.display = 'none';
