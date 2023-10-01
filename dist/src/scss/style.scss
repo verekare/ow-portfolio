@@ -72,4 +72,16 @@ img{
     .sd .panel {
         display: block;
     }
+    .sd {
+        background: linear-gradient($color-1, $color-2);
+    }
+    .pd {
+        background: linear-gradient($color-2, $color-3);
+    }
+    .mm {
+        background: linear-gradient($color-3, $color-4);
+    }
+    .ab {
+        // background: linear-gradient($color-1, $color-2);
+    }
 }
