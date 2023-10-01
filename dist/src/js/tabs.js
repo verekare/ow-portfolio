@@ -2,7 +2,7 @@
             // (tab-content, clicked tab-link)
             function openTab(tabId, elem) { 
               // tab-link collection
-    let tabLinks = Array.from(document.querySelector('.tabs-nav').children);
+    let tabLinks = Array.from(document.getElementById('tabs-nav').children);
   
               // make all tabs thin
     for (let tab of tabLinks) {
