@@ -1,41 +1,22 @@
-// SWITCHING THE TABS
-        // (tab-content, clicked tab-link)
-function openTab(tabId, elem) { 
-          // tab-link collection
-  let tabLinks = Array.from(document.getElementById('tabs-nav').children);
+let tabs = Array.from(document.getElementById('tabs-nav').children)
 
-          // make all tabs thin
-  for (let tab of tabLinks) {
-    tab.style.flex = 0;
-  }
+tabs.forEach( (tab, index) => {
+  tab.addEventListener("click", () => {
+      if (tab.style.flexGrow === '1' || tab.style.flexGrow === '0') {
+          tabs.forEach( (_tab) => {  //all
+              _tab.style.flexGrow = '0';
+              _tab.lastElementChild.style.display = 'none';
+          });
+          tab.style.flexGrow = '2';  //sel
+          tab.lastElementChild.style.display = 'block'
+      }
 
-          // except the one that was clicked
-  elem.style.flex = 1;
-  if (window.innerWidth < 1025) {
-    switch (elem) {
-      case tab1:
-        elem.style.background = '#fff';
-        break;
-      case tab2:
-        elem.style.background = '#ff0';
-        break;
-      case tab3:
-        elem.style.background = '#f00';
-        break;
-      case tab4:
-        elem.style.background = '#000';
-        break;
-    }
-  }
-
-          // find all content
-  let tabContents = document.querySelectorAll('.tab-content');
-
-          // hide everything
-  for (let content of tabContents) {
-    content.style.display = 'none';
-  }
-
-          // except chosen content
-  document.getElementById(tabId).style.display = 'block';
-}
+      else if (tab.style.flexGrow === '2') {
+          tabs.forEach( (_tab) => {  //all
+              _tab.style.flexGrow = '1';
+              _tab.lastElementChild.style.display = 'none';
+          });
+          tabs[3].style.flexGrow = '0';
+      }
+  })
+})
