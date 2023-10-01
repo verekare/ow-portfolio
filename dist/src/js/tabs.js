@@ -1,6 +1,6 @@
     // SWITCHING THE TABS
-const tabLinks = Array.from(document.querySelectorAll(".tab-link"));
-const tabContents = Array.from(document.querySelectorAll('.tab-content'));
+const tabLinks = document.querySelector('.tabs-nav').children;
+const tabContents = document.querySelectorAll('.tab-content');
 
 
 for (let i = 0; i < tabLinks.length; i++) {
