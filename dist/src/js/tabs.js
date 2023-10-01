@@ -22,7 +22,7 @@ function openTab(tabId, elem) {
       case tab3:
         elem.style.background = '#f00';
         break;
-      case about:
+      case tab4:
         elem.style.background = '#000';
         break;
     }
