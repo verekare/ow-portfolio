@@ -1,27 +1,25 @@
     // SWITCHING THE TABS
-const tabLinks = document.getElementById('tabs-nav').children;
-const tabContents = document.querySelectorAll('.tab-content');
-
-
-for (let i = 0; i < tabLinks.length; i++) {
-  tabLinks[i].addEventListener("click", ()=> {
-    
-    if (tabLinks[i].style.flex == '1' || tabLinks[i].style.flex == '0') {
-      for (let tablink of tabLinks) {
-        tablink.style.flex = '1';
-      }
-      tabLinks[i].style.flex = '2'; // selected
-      tabLinks[i].lastElementChild.style.display = "block";
+            // (tab-content, clicked tab-link)
+            function openTab(tabId, elem) { 
+              // tab-link collection
+    let tabLinks = Array.from(document.querySelector('.tabs-nav').children);
+  
+              // make all tabs thin
+    for (let tab of tabLinks) {
+      tab.style.flex = 0;
     }
+  
+              // except the one that was clicked
+    elem.style.flex = 1;
+  
+              // find all content
+    let tabContents = document.querySelectorAll('.tab-content');
     
-    else if (tabLinks[i].style.flex == '2') {
-      console.log('closing!!!');
-      for (let k = 0; k < tabLinks.length-1; k++) {
-        tabLinks[k].style.flex = '1';
-        tabLinks[k].lastElementChild.style.display = "none";
-      }
-      tabLinks[3].style.flex = '0';
-      tabContents[i].style.display = "none";
+              // hide everything
+    for (let content of tabContents) {
+      content.style.display = 'none';
     }
-  })
-}
+  
+              // except chosen content
+    document.getElementById(tabId).style.display = 'block';
+  }

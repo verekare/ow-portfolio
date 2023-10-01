@@ -8,13 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
+        <script src="/src/js/tabs.js"></script>
         
         <nav id="tabs-nav">
 
             <!--     SOUND DESIGN TAB     -->
-            <div class="tab-link sd">
+            <div class="tab-link sd" onclick="openTab('tab1', this)">
                 <h1 class="tab-header">sound design / production</h1>
                 <div class="tab-content" id="tab1">
                     <h1 class="tab-description">Offering and providing colorful sounds for visuals, assisting to immerse and dive into the right spirit/feeling by means of sonic dimension.</h1>
@@ -89,7 +91,7 @@
                             </div>
                             
             <!--     PODCAST TAB     -->
-            <div class="tab-link pd">
+            <div class="tab-link pd" onclick="openTab('tab2', this)">
                 <h1 class="tab-header">podcast editing</h1>
                 <div class="tab-content" id="tab2">
                     <h1 class="tab-description">I help with sonic branding, editing, mixing and mastering for podcasts.</h1>
@@ -109,7 +111,7 @@
             </div>
                             
             <!--     MIX AND MASTER TAB     -->
-            <div class="tab-link mm">
+            <div class="tab-link mm" onclick="openTab('tab3', this)">
                 <h1 class="tab-header">mix / master</h1>
                 <div class="tab-content" id="tab3">
                     <h1 class="tab-description">I do music production, help with recording, mixing and mastering. In my sound I'm devoted to groove, sound textures and sharp audio solutions.</h1>
@@ -124,7 +126,7 @@
             </div>
             
             <!--     THE ABOUT TAB     -->
-            <div class="tab-link ab">
+            <div class="tab-link ab" onclick="openTab('about', this)">
                 <h1 class="tab-header">about</h1>
                 <div class="tab-content" id="tab4">
                     <!-- Content goes here -->
@@ -180,7 +182,8 @@
         
         </nav>
 
+        
+        
         <script src="/src/js/accordion.js"></script>
-        <script src="/src/js/tabs.js"></script>
     </body>
 </html>
