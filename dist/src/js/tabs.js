@@ -1,5 +1,5 @@
     // SWITCHING THE TABS
-const tabLinks = document.querySelector('.tabs-nav').children;
+const tabLinks = document.getElementById('tabs-nav').children;
 const tabContents = document.querySelectorAll('.tab-content');
 
 
