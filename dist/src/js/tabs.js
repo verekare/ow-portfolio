@@ -1,4 +1,4 @@
-let tabs = document.getElementById('tabs-nav')
+let tabs = document.getElementById('tabs-nav');
 
 tabs.forEach( (tab, index) => {
   tab.addEventListener("click", () => {
