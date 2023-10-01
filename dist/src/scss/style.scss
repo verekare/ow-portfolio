@@ -65,7 +65,7 @@ img{
 }
 
 @media screen and (max-width: 1024px) {
-    .tabs-nav {
+    #tabs-nav {
         flex-direction: column;
         overflow-y: auto;
     }
