@@ -9,14 +9,14 @@
     outline: none; 
 }
 
-// button {
-//     transition: transform 0.4s;
-//     transition-timing-function: linear;
-// }
+button {
+    transition: transform 0.3s;
+    transition-timing-function: linear;
+}
 
-// button:hover {
-//     transform: translateX(40px);
-// }
+button:hover {
+    transform: translateX(40px);
+}
 
 .panel {
     display: block;
@@ -29,12 +29,4 @@
     li {
         margin: 15px auto;
     }
-}
-
-.list-header {
-    transition: transform 0.4s;
-    transition-timing-function: linear;
-}
-.list-header:hover {
-    transform: translateX(90px);
 }
