@@ -30,7 +30,8 @@ button:hover {
   transition: transform 0.4s;
   transition-timing-function: ease-out;
 }
-.accordion .list-header:hover {
+.accordion:hover,
+.list-header:hover {
   transform: translateX(90px);
 }
 .tab-header {
