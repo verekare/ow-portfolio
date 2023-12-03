@@ -26,6 +26,13 @@ button:hover {
 .contacts li {
   margin: 15px auto;
 }
+.accordion .list-header {
+  transition: transform 0.4s;
+  transition-timing-function: ease-out;
+}
+.accordion .list-header:hover {
+  transform: translateX(90px);
+}
 .tab-header {
   margin: 0;
   margin-bottom: 16px;
