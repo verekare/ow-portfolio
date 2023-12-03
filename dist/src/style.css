@@ -16,7 +16,7 @@ button:hover {
   transform: translateX(40px);
 }
 .panel {
-  display: block;
+  display: none;
   margin: 0;
 }
 .contacts {
