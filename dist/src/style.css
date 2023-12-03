@@ -8,6 +8,13 @@
   border: none;
   outline: none;
 }
+button {
+  transition: transform 0.3s;
+  transition-timing-function: linear;
+}
+button:hover {
+  transform: translateX(40px);
+}
 .panel {
   display: block;
   margin: 0;
@@ -18,21 +25,6 @@
 }
 .contacts li {
   margin: 15px auto;
-}
-.list-header {
-  transition: transform 0.35s 0.2s;
-  transition-timing-function: ease-out;
-}
-.list-header:hover {
-  transform: translateX(90px);
-}
-@media screen and (max-width: 1024px) {
-  .list-header {
-    transition: none;
-  }
-  .list-header:hover {
-    transform: none;
-  }
 }
 .tab-header {
   margin: 0;
