@@ -8,11 +8,11 @@
   border: none;
   outline: none;
 }
-button {
+.about {
   transition: transform 0.3s;
   transition-timing-function: linear;
 }
-button:hover {
+.about:hover {
   transform: translateX(40px);
 }
 .panel {
@@ -65,7 +65,7 @@ ol {
   max-width: 900px;
 }
 li {
-  list-style-type: nonr;
+  list-style-type: none;
 }
 .media {
   list-style: none;
