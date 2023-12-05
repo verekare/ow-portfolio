@@ -1,6 +1,6 @@
     // OPEN/CLOSE ACCORDION
     let acc = document.getElementsByClassName("accordion");
-    let arrAnim = document.querySelectorAll("arrow-animation");
+    let arrAnim = document.getElementsByClassName("arrow-animation");
     for (let i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         let panel = this.lastElementChild;
