@@ -32,6 +32,7 @@
 }
 
 .arrow-animation {
+    display: inline;
     transition: transform .3s ease-in-out;
 }
 .list-header:hover + .arrow-animation {
@@ -39,5 +40,5 @@
 }
 
 .list-header:focus + .arrow-animation {
-    transform:rotate(90deg);
+    transform: rotate(90deg);
 }

@@ -27,6 +27,7 @@
   margin: 15px auto;
 }
 .arrow-animation {
+  display: inline;
   transition: transform 0.3s ease-in-out;
 }
 .list-header:hover + .arrow-animation {
