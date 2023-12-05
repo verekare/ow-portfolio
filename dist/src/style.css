@@ -53,6 +53,8 @@
   font-size: 36px;
 }
 .list-header {
+  background: none;
+  border: none;
   display: inline-block;
   max-width: 900px;
   list-style: none;
