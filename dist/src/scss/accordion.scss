@@ -32,7 +32,7 @@
 }
 
 .arrow-animation {
-    display: inline;
+    display: inline-block;
     transition: transform .3s ease-in-out;
 }
 .list-header:hover + .arrow-animation {
