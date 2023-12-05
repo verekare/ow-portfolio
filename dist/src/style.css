@@ -26,6 +26,15 @@
 .contacts li {
   margin: 15px auto;
 }
+.arrow-animation {
+  transition: transform 0.3s ease-in-out;
+}
+.list-header:hover + .arrow-animation {
+  transform: translateX(15px);
+}
+.list-header:focus + .arrow-animation {
+  transform: rotate(90deg);
+}
 .tab-header {
   margin: 0;
   margin-bottom: 16px;
