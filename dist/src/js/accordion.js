@@ -5,10 +5,10 @@
       acc[i].addEventListener("click", function() {
         let panel = this.lastElementChild;
                 // toggle between hide / show
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
+        if (panel.style.display === "none") {
           panel.style.display = "block";
+        } else {
+          panel.style.display = "none";
         }
     
       });
