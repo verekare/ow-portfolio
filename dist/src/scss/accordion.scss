@@ -9,17 +9,17 @@
     outline: none; 
 }
 
-button {
+.about {
     transition: transform 0.3s;
     transition-timing-function: linear;
 }
 
-button:hover {
+.about:hover {
     transform: translateX(40px);
 }
 
 .panel {
-    display: block;
+    display: none;
     margin: 0;
 }
 
