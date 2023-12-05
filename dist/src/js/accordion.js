@@ -25,5 +25,7 @@ for (let i = 0; i < acc.length; i++) {
 
 console.log(arrAnim);
 if (window.matchMedia("(max-width: 1024px)").matches) {
-  arrAnim.style.display = "none";
+  for (let i=0; i < arrAnim.length; i++) {
+    arrAnim[i].style.display = "none";
+  }
 }
