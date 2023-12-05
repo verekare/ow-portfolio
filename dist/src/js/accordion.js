@@ -24,7 +24,5 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 if (window.matchMedia("(max-width: 1024px)").matches) {
-  for (let i=0; i < arrAnim.length; i++) {
-    arrAnim[i].remove();
-  }
+  arrAnim.children.clear()
 }
