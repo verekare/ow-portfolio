@@ -7,8 +7,6 @@
 
                 // for mobile
         if (window.matchMedia("(max-width: 1024px)").matches) {
-          // arrAnim.style.display = "none";
-          alert('Its working')
           if (panel.style.display === "none") {
             panel.style.display = "block";
           } else {
@@ -23,4 +21,8 @@
         }
     
       });
+    }
+
+      if (window.matchMedia("(max-width: 1024px)").matches) {
+        arrAnim.style.display = "none";
       }
