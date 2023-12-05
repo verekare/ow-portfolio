@@ -26,15 +26,12 @@
 .contacts li {
   margin: 15px auto;
 }
-.arrow-animation {
+.arrow {
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
-.list-header:hover + .arrow-animation {
+.list-header:hover + .arrow {
   transform: translateX(15px);
-}
-.list-header:focus + .arrow-animation {
-  transform: rotate(90deg);
 }
 .tab-header {
   margin: 0;
@@ -53,8 +50,6 @@
   font-size: 36px;
 }
 .list-header {
-  background: none;
-  border: none;
   display: inline-block;
   max-width: 900px;
   list-style: none;
