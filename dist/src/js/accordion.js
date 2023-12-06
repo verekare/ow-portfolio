@@ -14,7 +14,7 @@ for (let i = 0; i < acc.length; i++) {
       }
     }
             // toggle between hide / show
-    if (!looksDown) {
+    if (looksDown) {
       panel.style.display = "none";
       arrows[i].style.transform = "rotate(0deg)";
       looksDown = false;
