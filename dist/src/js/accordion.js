@@ -1,10 +1,10 @@
 // OPEN/CLOSE ACCORDION
 let acc = document.getElementsByClassName("accordion");
-let arrAnim = document.getElementsByClassName("arrow-animation");
+let arrows = document.getElementsByClassName("arrow");
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     let panel = this.lastElementChild;
-
+    let looksDown = false;
             // for mobile
     if (window.matchMedia("(max-width: 1024px)").matches) {
       if (panel.style.display === "none") {
@@ -14,13 +14,22 @@ for (let i = 0; i < acc.length; i++) {
       }
     }
             // toggle between hide / show
-    if (panel.style.display === "block") {
+    if (!looksDown) {
       panel.style.display = "none";
+      arrows[i].style.transform = "rotate(0deg)";
+      looksDown = false;
     } else {
       panel.style.display = "block";
+      arrows[i].style.transform = "rotate(90deg)";
+      looksDown = true;
     }
 
   });
+}
+
+let contentPanels = document.getElementsByClassName("panel");
+for (let i = 0; i < contentPanels.length; i++) {
+  contentPanels[i].addEventListener()
 }
 
 if (window.matchMedia("(max-width: 1024px)").matches) {
