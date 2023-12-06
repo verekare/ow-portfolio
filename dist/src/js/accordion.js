@@ -16,20 +16,19 @@ for (let i = 0; i < acc.length; i++) {
             // toggle between hide / show
     if (looksDown) {
       panel.style.display = "none";
-      arrows[i].style.transform = "rotate(0deg)";
-      looksDown = false;
+      if (!panel.previousElementSibling.classList.contains("list-header")) {
+        arrows[i].style.transform = "rotate(0deg)";
+        looksDown = false;
+      }
     } else {
       panel.style.display = "block";
-      arrows[i].style.transform = "rotate(90deg)";
-      looksDown = true;
+      if (!panel.previousElementSibling.classList.contains("list-header")) {
+        arrows[i].style.transform = "rotate(90deg)";
+        looksDown = true;
+      }
     }
 
   });
-}
-
-let contentPanels = document.getElementsByClassName("panel");
-for (let i = 0; i < contentPanels.length; i++) {
-  contentPanels[i].addEventListener()
 }
 
 if (window.matchMedia("(max-width: 1024px)").matches) {
