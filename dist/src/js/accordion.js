@@ -1,10 +1,10 @@
 // OPEN/CLOSE ACCORDION
 let acc = document.getElementsByClassName("accordion");
 let arrows = document.getElementsByClassName("arrow");
+let looksDown = false;
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     let panel = this.lastElementChild;
-    let looksDown = false;
             // for mobile
     if (window.matchMedia("(max-width: 1024px)").matches) {
       if (panel.style.display === "none") {
