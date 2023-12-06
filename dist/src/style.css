@@ -33,6 +33,11 @@
 .list-header:hover + .arrow {
   transform: translateX(15px);
 }
+@media screen and (max-width: 1024px) {
+  .arrow {
+    display: none;
+  }
+}
 .tab-header {
   margin: 0;
   margin-bottom: 16px;
