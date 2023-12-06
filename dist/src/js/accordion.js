@@ -16,23 +16,17 @@ for (let i = 0; i < acc.length; i++) {
             // toggle between hide / show
     if (looksDown) {
       panel.style.display = "none";
-      if (!panel.previousElementSibling.classList.contains("list-header")) {
+      if (panel.previousElementSibling.classList.contains("arrow")) {
         arrows[i].style.transform = "rotate(0deg)";
         looksDown = false;
       }
     } else {
       panel.style.display = "block";
-      if (!panel.previousElementSibling.classList.contains("list-header")) {
+      if (panel.previousElementSibling.classList.contains("arrow")) {
         arrows[i].style.transform = "rotate(90deg)";
         looksDown = true;
       }
     }
 
   });
-}
-
-if (window.matchMedia("(max-width: 1024px)").matches) {
-  for (let i = 0; i < arrAnim.length; i++) {
-    arrAnim[i].removeChild(arrAnim[i].firstChild);
-  }
 }
