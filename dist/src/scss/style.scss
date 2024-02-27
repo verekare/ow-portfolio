@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     font-size: 24px;
     scroll-behavior: smooth;
+    cursor: url('/dist/assets/cursor.png'), auto;
 }
 ul {
     list-style: none;
@@ -68,6 +69,9 @@ img{
 }
 
 @media screen and (max-width: 1024px) {
+    body {
+        cursor: auto;
+    }
     .tabs-nav {
         flex-direction: column;
         overflow-y: auto;

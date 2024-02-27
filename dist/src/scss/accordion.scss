@@ -31,14 +31,16 @@
     }
 }
 
-.arrow-animation {
+.arrow {
     display: inline-block;
     transition: transform .3s ease-in-out;
 }
-.list-header:hover + .arrow-animation {
+.list-header:hover + .arrow {
     transform: translateX(15px);
 }
 
-.list-header:focus + .arrow-animation {
-    transform: rotate(90deg);
+@media screen and (max-width: 1024px) {
+    .arrow {
+        display: none;
+    }
 }
